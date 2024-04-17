@@ -1,0 +1,6 @@
+ipmi/
+linux/
+openbmc/
+qemu/
+u-boot/
+.vscode/
