@@ -1,0 +1,12 @@
+[submodule "linux"]
+	path = linux
+	url = https://github.com/PennixRv/aspeed_linux.git
+[submodule "u-boot"]
+	path = u-boot
+	url = https://github.com/PennixRv/aspeed_uboot
+[submodule "openbmc"]
+	path = openbmc
+	url = https://github.com/PennixRv/aspeed_openbmc
+[submodule "qemu"]
+	path = qemu
+	url = https://github.com/PennixRv/qemu.git
