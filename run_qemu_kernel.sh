@@ -29,4 +29,6 @@ ${QEMU_BUILD}/qemu-system-arm \
   -nic user \
   -dtb ${DTB} \
   -append "console=ttyS4,115200n8" \
+  -initrd ./rootfs.cpio.xz \
   -kernel ${KERNEL} ${GDB}
+

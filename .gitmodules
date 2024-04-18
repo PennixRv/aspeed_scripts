@@ -13,3 +13,6 @@
 [submodule "busybox"]
 	path = busybox
 	url = https://github.com/PennixRv/busybox.git
+[submodule "buildroot"]
+	path = buildroot
+	url = https://github.com/PennixRv/buildroot.git
