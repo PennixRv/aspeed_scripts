@@ -10,3 +10,6 @@
 [submodule "qemu"]
 	path = qemu
 	url = https://github.com/PennixRv/qemu.git
+[submodule "busybox"]
+	path = busybox
+	url = https://github.com/PennixRv/busybox.git
