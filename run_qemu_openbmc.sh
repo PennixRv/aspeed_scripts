@@ -14,9 +14,17 @@ QEMU_TOP=${CUR_DIR}/qemu
 QEMU_BUILD=${QEMU_TOP}/arm_output
 MTD=${CUR_DIR}/openbmc/build/tmp/deploy/images/ast2600-default/obmc-phosphor-image-ast2600-default.static.mtd
 
+GDB=
+
+if [ $# == 1 ] && [ $1 == "gdb" ]
+then
+    GDB+="-gdb tcp::4567 -S"
+fi
+
 ${QEMU_BUILD}/qemu-system-arm \
   -M ast2600-evb \
   -m 2048M \
   -nographic \
   -nic user \
-  -drive file=${MTD},format=raw,if=mtd
+  ${GDB} \
+  -drive file=${MTD},format=raw,if=mtd 
